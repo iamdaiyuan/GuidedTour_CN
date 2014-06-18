@@ -14,22 +14,23 @@
             <article class="chapter>">
                 <section class="section">
                     <p class="para">
-  In the setter for <code class="code-voice">perimeter</code>, the new value has the implicit name <code class="code-voice">newValue</code>. You can provide an explicit name in parentheses after <code class="code-voice">set</code>.
+  在<code class="code-voice">perimeter</code>的setter中，新值的名字是<code class="code-voice">newValue</code>。你可以在<code class="code-voice">set</code>之后显示的设置一个名字。
 </p><p class="para">
-  Notice that the initializer for the <code class="code-voice">EquilateralTriangle</code> class has three different steps:
+  注意<code class="code-voice">EquilateralTriangle</code>类的构造器执行了三步：
 </p><ol class="list-number">
   <li class="item"><p class="para">
-  Setting the value of properties that the subclass declares.
+  设置子类声明的属性值。
 </p>
 </li><li class="item"><p class="para">
-  Calling the superclass’s initializer.
+  调用父类的构造器。
 </p>
 </li><li class="item"><p class="para">
-  Changing the value of properties defined by the superclass. Any additional setup work that uses methods, getters, or setters can also be done at this point.
+  改变父类定义的属性值。其他的工作比如调用方法、getters和setters也可以在这个阶段完成。
 </p>
 </li>
 </ol><p class="para">
-  If you don’t need to compute the property but still need to provide code that is run before and after setting a new value, use <code class="code-voice">willSet</code> and <code class="code-voice">didSet</code>. For example, the class below ensures that the side length of its triangle is always the same as the side length of its square.
+  如果你不需要计算属性但是需要在设置一个新值之前运行一些代码，使用<code class="code-voice">willSet</code> 和  <code class="code-voice">didSet</code>
+  比如，下面的类确保三角形的边长总是和正方形的边长相同。
 </p>
                 </section>
             </article>

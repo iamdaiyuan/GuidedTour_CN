@@ -16,16 +16,17 @@
                     <div class="note">
   <a name="//apple_ref/doc/uid/TP40014097-CH2-XID_19"></a>
   <aside class="aside">
-    <p class="aside-title">Experiment
+    <p class="aside-title">练习
     </p>
-    	<p class="para">Add a <code class="code-voice">color</code> method to <code class="code-voice">Suit</code> that returns “black” for spades and clubs, and returns “red” for hearts and diamonds.
+    	<p class="para">给<code class="code-voice">Suit</code>添加一个<code class="code-voice">color</code>方法，对spades和clubs返回“black”，对hearts和diamonds返回“red”。
     	</p>
     
   </aside>
 </div><p class="para">
-  Notice the two ways that the <code class="code-voice">Hearts</code> member of the enumeration is referred to above: When assigning a value to the <code class="code-voice">hearts</code> constant, the enumeration member <code class="code-voice">Suit.Hearts</code> is referred to by its full name because the constant doesn’t have an explicit type specified. Inside the switch, the enumeration is referred to by the abbreviated form <code class="code-voice">.Hearts</code> because the value of <code class="code-voice">self</code> is already known to be a suit. You can use the abbreviated form anytime the value’s type is already known.
+
+  注意，有两种方式可以引用<code class="code-voice">Hearts</code>成员：给hearts常量赋值时，枚举成员<code class="code-voice">Suit.Hearts</code>需要用全名来引用，因为常量没有显式指定类型。在switch里，枚举成员使用缩写<code class="code-voice">.Hearts</code>来引用，因为<code class="code-voice">self</code>的值已经知道是一个suit。已知变量类型的情况下你可以使用缩写。
 </p><p class="para">
-  Use <code class="code-voice">struct</code> to create a structure. Structures support many of the same behaviors as classes, including methods and initializers. One of the most important differences between structures and classes is that structures are always copied when they are passed around in your code, but classes are passed by reference.
+  使用<code class="code-voice">struct</code>来创建一个结构体。结构体和类有很多相同的地方，比如方法和构造器。它们结构体之间最大的一个区别就是 结构体是传值，类是传引用。
 </p>
                 </section>
             </article>
